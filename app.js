@@ -32,6 +32,12 @@ while (numeroUsuario != numeroSecreto){
         //cuando la persona no acierta
         intentos = intentos + 1;
         palabraVeces='veces';
+        /*Se rompe el buble cuando sobre pasa el numero de intentos */
+        if (intentos>3){
+            alert('Llegastes al numero maximo de intentos ');
+            break; //Se libera la caja con la función break (analogía de que el while es una caja) 
+
+        }
         //La condición no se cumplio
         //alert('No acertastes el numero'); //se muestra un mensaje en caso de que no se cumplio la condición
         console.log('Valor del número secreto:', numeroSecreto);
