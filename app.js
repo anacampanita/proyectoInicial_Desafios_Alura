@@ -1,12 +1,13 @@
 //alert('Hola Mundo'); // alert-mostrar mensaje, script hay comillas simples '' y comillas dobles ""
-let numeroSecreto = Math.floor(Math.random()*10)+1;
+let numMaximo =100;
+let numeroSecreto = Math.floor(Math.random()*numMaximo)+1;
 let numeroUsuario = 0;
 let intentos =1;
 //palabraVeces = 'vez';
-let maximosintentos = 3;
+let maximosintentos = 6;
 /*la operacion seguira repitiendose mientras elnumero de usuario sea diferente a numero secreto */
 while (numeroUsuario != numeroSecreto){ 
-    numeroUsuario = parseInt(prompt("Me indicas un numero por favor:  "));  //prompt permite mandar un mensaje para preguntar al usuario
+    numeroUsuario = parseInt(prompt(`Me indicas un numero por favor entre el 1 y ${numMaximo}`));  //prompt permite mandar un mensaje para preguntar al usuario
     /*Dejamos en la memoria del computador el
     numero del usuario, let declaramos la varible*/
     //console.log('valor de intento: ', numeroUsuario);
